@@ -29,13 +29,21 @@ This repository is the code for NeurIPS 2024 Spotlight "Reinforcement Learning G
 **Mujoco210 is required for all environments,** and we run our experiments with CUDA 11.3. Below are the dependency for python packages:
 
 d4rl == 1.1
+
 dm-control == 1.0.5
+
 gym == 0.23.1
+
 mujoco-py == 2.1.2.14
+
 numpy == 1.20.3
+
 torch == 2.0.1
+
 transformers == 4.11.0
+
 tqdm
+
 wandb
 
 By default, OpenGL is used for the D4RL [1] environments. However, sometimes OpenGL will be problematic on headless machines; to fix this, try to set MUJOCO_GL environment variable to 'egl' or 'osmesa'.
