@@ -1,6 +1,6 @@
-﻿#  Code for Submission "Reinforcement Learning Gradients as Vitamin for Online Finetuning Decision Transformers"
+﻿#  Code for NeurIPS 2024 Spotlight "Reinforcement Learning Gradients as Vitamin for Online Finetuning Decision Transformers"
 
-This repository is the code for NeurIPS 2024 submission "Reinforcement Learning Gradients as Vitamin for Online Finetuning Decision Transformers".
+This repository is the code for NeurIPS 2024 Spotlight "Reinforcement Learning Gradients as Vitamin for Online Finetuning Decision Transformers".
 
 ## File Structure
 
