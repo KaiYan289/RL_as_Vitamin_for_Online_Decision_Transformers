@@ -94,7 +94,7 @@ python main.py --env antmaze-umaze{,-diverse}-v2 --eval_rtg -100 --online_rtg -1
 python main.py --env antmaze-medium{-play,-diverse}-v2 --eval_rtg -200 --online_rtg -200 --weight_decay 0.0001 --rl_algo TD3 --num_actor_update_interval 1 --actor_rl_coeff 0.1 --use_entropy_reg 0 --stoc 0 --actor_sup_coeff 1 --minimum_sapairs_per_iter 1000 --num_updates_per_pretrain_iter 5000 --max_pretrain_iters 40 --eval_context_length 1 --K 1 --critic_learning_rate 0.0002 --seed 16 --max_online_iters 99999 --replay_size 2000 --RL_from_start 1 --gamma 0.998
 python main.py --env antmaze-large{-play,-diverse}-v2 --eval_rtg -500 --online_rtg -500 --weight_decay 0.0001 --rl_algo TD3 --num_actor_update_interval 1 --actor_rl_coeff 0.1 --use_entropy_reg 0 --stoc 0 --actor_sup_coeff 1 --minimum_sapairs_per_iter 1000 --num_updates_per_pretrain_iter 5000 --max_pretrain_iters 40 --eval_context_length 1 --K 5 --critic_learning_rate 0.0002 --seed 16 --max_online_iters 99999 --replay_size 2000 --RL_from_start 1 --gamma 0.998
 ```
-where {a, b} means choose one from a, b (a, b can be empty).
+where {a, b} means choose one from a, b (a, b can be empty). Use --RL_from_start flag to control whether apply alpha (--actor_rl_coeff) to pretrain or not. Note: for antmaze, following CQL and IQL, we use a reward shaping which is to apply a -1 reward to every step. Thus, a successful trajectory is one that has >-1000 reward. 
 
 
 ### MuJoCo
